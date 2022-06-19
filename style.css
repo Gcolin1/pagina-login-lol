@@ -191,7 +191,7 @@ main{
 }
 
 .login-link{
-    font-size: 0.8em;
+    font-size: 0.6em;
     text-decoration: none;
     color: var(--medium-grey);
     text-transform: uppercase;
@@ -201,8 +201,124 @@ main{
 
 .wallpaper{
     width: 100%;
-    background: url(img/wallpaper5.jpg);
+    background: url(img/wallpaper4.webp);
     background-position: center center;
     background-size: cover;
     flex: 1;
 }   
+
+/* PAGINAD E CADASTRO  */
+
+.pagCadastro{
+    display: flex;
+    background: url(img/wallpaper2.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    flex: 1;
+}
+
+.cad-logo{
+    width: 190px;
+    height: 105px;
+    margin: 0 14px;
+}
+
+.title-cad{
+    color: var(--white);
+    font-size: 3.7em;
+    width: 400px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: 14%;
+    position: relative;
+    right: 9%;
+}
+
+.cadastro{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 80%;
+    padding: clamp(35px, 4%, 70px);
+    padding-top: 65px;
+    padding-bottom: 30px;
+    position: relative;
+    margin: 7.8% 0;
+    left: 21.5%;
+}
+
+.cadastro p{
+    font-size: 0.5em;
+    font-weight: 700;
+}
+
+.cadastro-button{
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    border-radius: 30px;   
+    border: none;
+    cursor: pointer; 
+    margin-top: 60px;
+    margin-bottom: 35px;
+    transition: all 200ms ease-in;
+}
+
+.cadastro-button svg{
+    fill: white;
+}
+
+.cadastro-button:disabled{
+    cursor: auto;
+    background: var(--white);
+    border: 2px solid var(--light-grey);
+}
+
+.cadastro-button:disabled svg{
+    fill: var(--light-grey);
+}
+
+.cadastro-label-checkbox{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: flex;
+}
+
+.cadastro-input-checkbox{
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background: var(--light-grey);
+    margin-right: 8px;
+    border-radius: 3px;
+
+}
+
+.cadastro-input-checkbox:checked{
+    background: var(--red);
+}
+
+.cadastro-input-checkbox:checked::after{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid var(--white);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
